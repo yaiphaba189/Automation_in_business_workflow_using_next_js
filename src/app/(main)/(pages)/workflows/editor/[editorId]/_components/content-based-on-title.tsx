@@ -42,13 +42,13 @@ type Props = {
 }
 
 const ContentBasedOnTitle = ({
-      nodeConnection,
-      newState,
-      file,
-      setFile,
-      selectedSlackChannels,
-      setSelectedSlackChannels,
-    }:Props) => {
+          nodeConnection,
+          newState,
+          file,
+          setFile,
+          selectedSlackChannels,
+          setSelectedSlackChannels,
+        }:Props) => {
   const { selectedNode } = newState.editor
   const title = selectedNode.data.title
 

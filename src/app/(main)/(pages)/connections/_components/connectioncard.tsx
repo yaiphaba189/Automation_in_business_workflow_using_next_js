@@ -20,12 +20,12 @@ type Props = {
 }
 
 const ConnectionCard = ({
-          description,
-          type,
-          icon,
-          title,
-          connected,
-        }) => {
+              description,
+              type,
+              icon,
+              title,
+              connected,
+            }) => {
   return (
     <Card className="flex w-full items-center justify-between">
       <CardHeader className="flex flex-col gap-4">
