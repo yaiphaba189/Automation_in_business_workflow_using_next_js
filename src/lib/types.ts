@@ -1,4 +1,4 @@
-import { ConnectionProviderProps } from '@/providers/connectios-provider'
+import { ConnectionProviderProps } from '@/providers/connections-provider'
 import { z } from 'zod'
 
 export const EditUserProfileSchema = z.object({

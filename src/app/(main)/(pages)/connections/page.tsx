@@ -1,11 +1,11 @@
 import { CONNECTIONS } from '@/lib/constant'
 import React from 'react'
+import ConnectionCard from './_components/connection-card'
 import { currentUser } from '@clerk/nextjs'
-import ConnectionCard from './_components/connectioncard'
-import { onDiscordConnect } from './-actions/discord-connection'
-import { onNotionConnect } from './-actions/notion-connection'
-import { onSlackConnect } from './-actions/slack-connection'
-import { getUserData } from './-actions/get-user'
+import { onDiscordConnect } from './_actions/discord-connection'
+import { onNotionConnect } from './_actions/notion-connection'
+import { onSlackConnect } from './_actions/slack-connection'
+import { getUserData } from './_actions/get-user'
 
 type Props = {
   searchParams?: { [key: string]: string | undefined }

@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import ConnectionCard from '@/app/(main)/(pages)/connections/_components/connectioncard'
+import ConnectionCard from '@/app/(main)/(pages)/connections/_components/connection-card'
 import { AccordionContent } from '@/components/ui/accordion'
 import MultipleSelector from '@/components/ui/multiple-selector'
 import { Connection } from '@/lib/types'
-import { useNodeConnections } from '@/providers/connectios-provider'
+import { useNodeConnections } from '@/providers/connections-provider'
 import { EditorState } from '@/providers/editor-provider'
 import { useFuzzieStore } from '@/store'
 import {

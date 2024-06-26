@@ -1,12 +1,12 @@
 'use client'
 import { Button } from '@/components/ui/button'
-import { useNodeConnections } from '@/providers/connectios-provider'
+import { useNodeConnections } from '@/providers/connections-provider'
 import { usePathname } from 'next/navigation'
 import React, { useCallback, useEffect, useState } from 'react'
 import {
   onCreateNodesEdges,
   onFlowPublish,
-} from '../_actions/wordflow-connections'
+} from '../_actions/workflow-connections'
 import { toast } from 'sonner'
 
 type Props = {
@@ -38,9 +38,9 @@ const FlowInstance = ({ children, edges, nodes }: Props) => {
 
   const onAutomateFlow = async () => {
     const flows: any = []
-    const connectedEdges = edges.map((edge: { target: any }) => edge.target)
-    connectedEdges.map((target: any) => {
-      nodes.map((node: { id: any; type: any }) => {
+    const connectedEdges = edges.map((edge) => edge.target)
+    connectedEdges.map((target) => {
+      nodes.map((node) => {
         if (node.id === target) {
           flows.push(node.type)
         }

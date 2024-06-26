@@ -1,11 +1,13 @@
-import { LampComponent } from '@/components/Global/lamp'
-import Navbar from "@/components/Global/navbar"
-import { ContainerScroll } from "@/components/Global/Container_Scroll_animation";
-import { Button } from "@/components/ui/button"
-import { clients, products} from '@/lib/constant'
-import { InfiniteMovingCards } from "@/components/Global/infinite_Moving Cards";
-import { HeroParallax } from "@/components/Global/Hero_Parallex";
-import React, { useState,useEffect, useRef } from 'react'
+import { CardBody, CardContainer, CardItem } from '@/components/global/3d-card'
+import { HeroParallax } from '@/components/global/connect-parallax'
+import { ContainerScroll } from '@/components/global/container-scroll-animation'
+import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
+import { LampComponent } from '@/components/global/lamp'
+import Navbar from '@/components/global/navbar'
+import { Button } from '@/components/ui/button'
+import { clients, products } from '@/lib/constant'
+import { CheckIcon } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Home() {
   return (

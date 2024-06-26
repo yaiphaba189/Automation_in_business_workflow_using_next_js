@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription } from '@/components/ui/card'
 import { onAddTemplate } from '@/lib/editor-utils'
-import { ConnectionProviderProps } from '@/providers/connectios-provider'
+import { ConnectionProviderProps } from '@/providers/connections-provider'
 import React from 'react'
 
 type Props = {
@@ -12,7 +12,7 @@ const isGoogleFileNotEmpty = (file: any): boolean => {
   return Object.keys(file).length > 0 && file.kind !== ''
 }
 
-const GoogleFileDetails = ({ gFile, nodeConnection, title }:Props) => {
+const GoogleFileDetails = ({ gFile, nodeConnection, title }: Props) => {
   if (!isGoogleFileNotEmpty(gFile)) {
     return null
   }

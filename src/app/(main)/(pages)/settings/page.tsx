@@ -1,8 +1,8 @@
-import ProfileForm from '@/components/form/profile-form'
+import ProfileForm from '@/components/forms/profile-form'
 import React from 'react'
-import ProfilePicture from './_component/profile-picture'
+import ProfilePicture from './_components/profile-picture'
 import { db } from '@/lib/db'
-import { currentUser } from "@clerk/nextjs";
+import { currentUser } from '@clerk/nextjs'
 
 type Props = {}
 

@@ -1,4 +1,3 @@
-'use client'
 import { useEditor } from '@/providers/editor-provider'
 import React, { CSSProperties } from 'react'
 import { Handle, HandleProps, useStore } from 'reactflow'
@@ -10,7 +9,7 @@ const selector = (s: any) => ({
   edges: s.edges,
 })
 
-const CustomHandle = (props:Props) => {
+const CustomHandle = (props: Props) => {
   const { state } = useEditor()
 
   return (

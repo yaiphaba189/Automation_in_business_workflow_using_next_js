@@ -28,6 +28,6 @@ export async function POST(req: Request) {
     })
   } catch (error) {
     console.error('Error updating database:', error)
-    return new NextResponse('Error updating user in database', { status: 5000 })
+    return new NextResponse('Error updating user in database', { status: 500 })
   }
 }

@@ -1,5 +1,5 @@
 import { AccordionContent } from '@/components/ui/accordion'
-import { ConnectionProviderProps } from '@/providers/connectios-provider'
+import { ConnectionProviderProps } from '@/providers/connections-provider'
 import { EditorState } from '@/providers/editor-provider'
 import { nodeMapper } from '@/lib/types'
 import React, { useEffect } from 'react'
@@ -13,9 +13,9 @@ import {
 import { Input } from '@/components/ui/input'
 import { onContentChange } from '@/lib/editor-utils'
 import GoogleFileDetails from './google-file-details'
-import GoogleDriveFiles from './google-drive-file'
+import GoogleDriveFiles from './google-drive-files'
 import ActionButton from './action-button'
-import { getFileMetaData } from '@/app/(main)/(pages)/connections/-actions/google-connection'
+import { getFileMetaData } from '@/app/(main)/(pages)/connections/_actions/google-connection'
 import axios from 'axios'
 import { toast } from 'sonner'
 
@@ -42,13 +42,13 @@ type Props = {
 }
 
 const ContentBasedOnTitle = ({
-                  nodeConnection,
-                  newState,
-                  file,
-                  setFile,
-                  selectedSlackChannels,
-                  setSelectedSlackChannels,
-                }: Props) => {
+  nodeConnection,
+  newState,
+  file,
+  setFile,
+  selectedSlackChannels,
+  setSelectedSlackChannels,
+}: Props) => {
   const { selectedNode } = newState.editor
   const title = selectedNode.data.title
 
