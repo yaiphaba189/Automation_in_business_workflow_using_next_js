@@ -22,7 +22,7 @@ model User {
 
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
-  localGoogleId    String?  @unique
+  localGoogleId    String?  @unique 
   googleResourceId String?  @unique
 
   LocalGoogleCredential LocalGoogleCredential?

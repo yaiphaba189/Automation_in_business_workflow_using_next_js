@@ -9,13 +9,13 @@ import { CardContainer } from '@/components/Global/3d-card'
 
 type Props = {}
 
-const GoogleDriveFiles = (props:Props) => {
+const GoogleDriveFiles = (props) => {
   const [loading, setLoading] = useState(false)
   const [isListening, setIsListening] = useState(false)
 
   const reqGoogle = async () => {
     setLoading(true)
-    const response = await axios.get('/api/drive-activity')
+    const response = await axios.post('/api/drive-activity')
     if (response) {
       toast.message(response.data)
       setLoading(false)

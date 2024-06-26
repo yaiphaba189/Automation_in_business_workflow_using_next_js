@@ -47,10 +47,13 @@ const frameworks = [
 ]
 
 const RenderConnectionAccordion = ({
-      connection,
-      state,
-    }) => {
-  const { 
+  connection,
+  state,
+}: {
+  connection: Connection
+  state: EditorState
+}) => {
+  const {
     title,
     image,
     description,

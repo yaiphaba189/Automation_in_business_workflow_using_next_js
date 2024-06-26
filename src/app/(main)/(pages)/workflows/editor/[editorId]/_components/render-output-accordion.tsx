@@ -9,7 +9,7 @@ type Props = {
   nodeConnection: ConnectionProviderProps
 }
 
-const RenderOutputAccordion = ({ state, nodeConnection }) => {
+const RenderOutputAccordion = ({ state, nodeConnection }: Props) => {
   const {
     googleFile,
     setGoogleFile,
