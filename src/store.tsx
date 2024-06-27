@@ -10,7 +10,7 @@ export interface Option {
   [key: string]: string | boolean | undefined
 }
 
-type FuzzieStore = {
+type aira = {
   googleFile: any
   setGoogleFile: (googleFile: any) => void
   slackChannels: Option[]
@@ -28,5 +28,3 @@ export const useFuzzieStore = create<FuzzieStore>()((set) => ({
   setSelectedSlackChannels: (selectedSlackChannels: Option[]) =>
     set({ selectedSlackChannels }),
 }))
-
-
